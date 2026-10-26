@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bario Neal | Ethical Fine Jewelry, Engagement & Wedding Rings</title>
+  <meta name="description" content="Handcrafted fine jewelry, custom engagement rings, and ethical wedding bands made with recycled metals, Fairmined gold, and traceable conflict-free diamonds in Philadelphia.">
+  <meta name="keywords" content="ethical jewelry, wedding rings, engagement rings, custom rings, fairmined gold, bario neal">
+
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bario Neal | Ethical Fine Jewelry & Wedding Rings">
+  <meta property="og:description" content="We Find Always In All Ways. Ethically sourced fine jewelry and bespoke custom designs.">
+  <meta property="og:image" content="figma_preview.png">
+
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. Top Announcement Bar
+       ======================================================================== -->
+  <div class="announcement-bar" id="announcementBar">
+    <div class="announcement-content">
+      <span><i class="fa-solid fa-gift"></i> Complimentary US Shipping On Orders Over $150</span>
+      <span class="dot">•</span>
+      <span><i class="fa-solid fa-gem"></i> 100% Recycled & Fairmined Precious Metals</span>
+      <span class="dot">•</span>
+      <span><i class="fa-solid fa-calendar-check"></i> Virtual & Showroom Appointments Available</span>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       2. Site Header & Sticky Navigation
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- Primary Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#wedding" class="nav-link">Engagement</a>
+        <a href="#wedding" class="nav-link">Wedding</a>
+        <a href="#everyday" class="nav-link">Fine Jewelry</a>
+        <a href="#custom" class="nav-link">Custom Design</a>
+        <a href="#ethical" class="nav-link">Ethics & Impact</a>
+        <a href="#love" class="nav-link">Love Stories</a>
+      </nav>
+
+      <!-- Center Brand Logo -->
+      <div class="brand-logo">
+        <a href="#">
+          <span class="logo-text">Bario Neal</span>
+          <span class="logo-sub">Philadelphia & New York</span>
+        </a>
+      </div>
+
+      <!-- Right Header Actions -->
+      <div class="nav-actions">
+        <button class="action-btn" id="searchBtn" title="Search Collection">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="action-btn" id="bookConsultBtn" title="Book Consultation">
+          <i class="fa-regular fa-calendar"></i>
+        </button>
+        <button class="cart-btn" id="cartToggleBtn" aria-label="View Shopping Bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span>Bag</span>
+          <span class="cart-count" id="cartCountBadge">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       3. Hero Section
+       ======================================================================== -->
+  <section class="hero-section" id="hero">
+    
+    <!-- Floating Peach Ribbon Tab -->
+    <div class="hero-ribbon">
+      New Heirloom Collection
+    </div>
+
+    <!-- Hero Background Image & Atmospheric Gradients -->
+    <div class="hero-bg">
+      <img src="assets/images/hero-model.jpg" alt="Bario Neal Fine Jewelry Campaign with Blonde Model wearing gold rings and necklaces">
+      <div class="hero-overlay-gradient"></div>
+    </div>
+
+    <!-- Hero Content Box -->
+    <div class="container">
+      <div class="hero-content">
+        <span class="section-tag">Ethically Handcrafted Since 2008</span>
+        <h1 class="hero-title">
+          We Find Always<br>
+          <em>In All Ways.</em>
+        </h1>
+        <p class="hero-subtitle">
+          Handcrafted in our Philadelphia studio with 100% recycled metals, Fairmined gold, and ethically sourced, traceable gemstones.
+        </p>
+        <div class="hero-actions">
+          <a href="#wedding" class="btn btn-sky">Shop Rings</a>
+          <button class="btn btn-outline" id="heroBookBtn">Book Appointment</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. Wedding & Engagement Section
+       ======================================================================== -->
+  <section class="products-section" id="wedding">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">Responsible Fine Jewelry</span>
+        <h2 class="section-title">Wedding & Engagement</h2>
+        <p class="section-subtitle" style="color: var(--color-muted); font-size: 0.95rem;">
+          Distinctive, modern rings made to celebrate personal commitments. Tailored with conflict-free diamonds and sustainably sourced sapphires.
+        </p>
+      </div>
+
+      <div class="products-grid">
+        
+        <!-- Product 1 -->
+        <article class="product-card" data-id="1" data-title="Avens Diamond Cluster Ring" data-price="2840" data-img="assets/images/ring-avens.jpg" data-metal="14k Yellow Gold" data-desc="A radiant burst of conflict-free brilliant white diamonds set organically on an ethical 14k gold band.">
+          <div class="product-image-wrapper">
+            <span class="product-badge">Fairmined Gold</span>
+            <img src="assets/images/ring-avens.jpg" alt="Avens Diamond Cluster Ring on ivory pedestal">
+            <div class="quick-view-overlay">
+              <button class="quick-view-btn" onclick="openQuickView(1)">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Avens Ring</h3>
+            <p class="product-specs">14k Yellow Gold • Traceable Diamond Cluster</p>
+            <div class="product-price">$2,840</div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card" data-id="2" data-title="Senna Textured Band Stack" data-price="1150" data-img="assets/images/ring-bands.jpg" data-metal="18k Recycled Gold" data-desc="Hand-sculpted organic wave band crafted with 100% recycled gold, finished with delicate accent stones.">
+          <div class="product-image-wrapper">
+            <span class="product-badge">Bestseller</span>
+            <img src="assets/images/ring-bands.jpg" alt="Senna Textured Gold Band Stack">
+            <div class="quick-view-overlay">
+              <button class="quick-view-btn" onclick="openQuickView(2)">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Senna Bands</h3>
+            <p class="product-specs">18k Recycled Gold • Hand Carved</p>
+            <div class="product-price">$1,150</div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card" data-id="3" data-title="Ray Emerald & Diamond Toi et Moi Ring" data-price="3490" data-img="assets/images/ring-toietmoi.jpg" data-metal="14k Yellow Gold" data-desc="A poetic union of two souls featuring a vivid Zambian emerald and a pear-shaped diamond in a modern bypass silhouette.">
+          <div class="product-image-wrapper">
+            <span class="product-badge">Signature Design</span>
+            <img src="assets/images/ring-toietmoi.jpg" alt="Ray Emerald and Diamond Toi et Moi Ring">
+            <div class="quick-view-overlay">
+              <button class="quick-view-btn" onclick="openQuickView(3)">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Ray Toi et Moi</h3>
+            <p class="product-specs">Zambian Emerald & Conflict-Free Diamond</p>
+            <div class="product-price">$3,490</div>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card" data-id="4" data-title="Burst Halo Diamond Ring" data-price="4200" data-img="assets/images/ring-cluster.jpg" data-metal="Platinum / 14k Gold" data-desc="An architectural centerpiece ring featuring an ethically mined diamond framed by a celestial spray of marquise and baguette accents.">
+          <div class="product-image-wrapper">
+            <span class="product-badge">Limited Edition</span>
+            <img src="assets/images/ring-cluster.jpg" alt="Burst Halo Diamond Ring">
+            <div class="quick-view-overlay">
+              <button class="quick-view-btn" onclick="openQuickView(4)">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Halo Cluster</h3>
+            <p class="product-specs">Certified Ethical Center Stone • Platinum</p>
+            <div class="product-price">$4,200</div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. Ethical Approach Section (50/50 Split)
+       ======================================================================== -->
+  <section class="ethical-section" id="ethical">
+    
+    <!-- Left Jeweler Craftsmanship Media -->
+    <div class="ethical-media">
+      <img src="assets/images/artisan-hands.jpg" alt="Artisan jeweler's hands holding a hand-carved gold ring in Philadelphia workshop">
+    </div>
+
+    <!-- Right Sage Green Content -->
+    <div class="ethical-content">
+      <span class="section-tag light">Sustainability & Traceability</span>
+      <h2 class="section-title">An Ethical Approach</h2>
+      <p class="ethical-description">
+        From mine to market, we are reimagining the fine jewelry world. Every piece is handcrafted in our living-wage Philadelphia workshop using 100% recycled metals, certified Fairmined gold, and diamonds traced directly to conflict-free artisanal cooperatives.
+      </p>
+
+      <div class="ethical-features">
+        <div class="ethical-feature-item">
+          <i class="fa-solid fa-check"></i>
+          <span>100% Recycled & Fairmined Certified Gold & Platinum</span>
+        </div>
+        <div class="ethical-feature-item">
+          <i class="fa-solid fa-check"></i>
+          <span>Direct-from-Mine Traceable Colored Gemstones & Diamonds</span>
+        </div>
+        <div class="ethical-feature-item">
+          <i class="fa-solid fa-check"></i>
+          <span>Certified B-Corporation with Living Wage Standards</span>
+        </div>
+      </div>
+
+      <div>
+        <button class="btn btn-white" id="ethicalLearnBtn">Our Impact Report</button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ========================================================================
+       6. Press & Recognition Bar
+       ======================================================================== -->
+  <div class="press-bar">
+    <div class="container">
+      <div class="press-title">Celebrated By Global Critics & Publications</div>
+      <div class="press-logos">
+        <span class="press-logo-item">Vogue</span>
+        <span class="press-logo-item">The New York Times</span>
+        <span class="press-logo-item">Brides</span>
+        <span class="press-logo-item">Harper's Bazaar</span>
+        <span class="press-logo-item">Elle</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       7. Mission & Statement Quote Banner
+       ======================================================================== -->
+  <section class="statement-section">
+    <div class="container container-narrow">
+      <div class="statement-seal" title="Certified Ethical Jewelry Seal">
+        <i class="fa-solid fa-leaf"></i>
+      </div>
+      <blockquote class="statement-quote">
+        “Each Bario Neal piece is crafted with ethically sourced precious metals to reflect our commitment to human rights and environmental sustainability.”
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. Everyday Fine Jewelry Collection
+       ======================================================================== -->
+  <section class="everyday-section" id="everyday">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">Curated Essentials</span>
+        <h2 class="section-title">Our Jewelry</h2>
+        <p class="section-subtitle" style="color: var(--color-muted); font-size: 0.95rem;">
+          Understated luxury designed for daily wear. Layered chains, sculpted cuffs, delicate studs, and modern signet rings.
+        </p>
+      </div>
+
+      <div class="products-grid">
+        
+        <!-- Category 1: Rings -->
+        <article class="product-card" data-id="5" data-title="Lash Solitaire Diamond Ring" data-price="980" data-img="assets/images/jewelry-rings.jpg" data-metal="14k Gold" data-desc="Delicate everyday stacking ring set with a bezel-held recycled brilliant diamond.">
+          <div class="product-image-wrapper">
+            <img src="assets/images/jewelry-rings.jpg" alt="Everyday Fine Gemstone Rings on Pedestal">
+            <div class="quick-view-overlay">
+              <button class="quick-view-btn" onclick="openQuickView(5)">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Rings</h3>
+            <p class="product-specs">Stackable Bands & Signets</p>
+            <div class="product-price">From $650</div>
+          </div>
+        </article>
+
+        <!-- Category 2: Bracelets -->
+        <article class="product-card" data-id="6" data-title="Turquoise Inlay Gold Cuff" data-price="1420" data-img="assets/images/jewelry-bracelets.jpg" data-metal="14k Yellow Gold" data-desc="Architectural solid gold cuff inlaid with ethical natural Sleeping Beauty turquoise.">
+          <div class="product-image-wrapper">
+            <img src="assets/images/jewelry-bracelets.jpg" alt="Gold Cuff Bracelet with Turquoise Inlay">
+            <div class="quick-view-overlay">
+              <button class="quick-view-btn" onclick="openQuickView(6)">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Bracelets</h3>
+            <p class="product-specs">Cuffs & Delicate Chains</p>
+            <div class="product-price">From $820</div>
+          </div>
+        </article>
+
+        <!-- Category 3: Necklaces -->
+        <article class="product-card" data-id="7" data-title="Aira Diamond Pendant Necklace" data-price="1280" data-img="assets/images/jewelry-necklaces.jpg" data-metal="14k Gold" data-desc="Layered delicate 14k gold cable chains with a bezel-set emerald cut diamond pendant.">
+          <div class="product-image-wrapper">
+            <img src="assets/images/jewelry-necklaces.jpg" alt="Layered Fine Gold Pendant Necklaces">
+            <div class="quick-view-overlay">
+              <button class="quick-view-btn" onclick="openQuickView(7)">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Necklaces</h3>
+            <p class="product-specs">Pendants & Chokers</p>
+            <div class="product-price">From $490</div>
+          </div>
+        </article>
+
+        <!-- Category 4: Earrings -->
+        <article class="product-card" data-id="8" data-title="Linear Diamond Drop Studs" data-price="890" data-img="assets/images/jewelry-earrings.jpg" data-metal="14k White / Yellow Gold" data-desc="Geometric stud earrings featuring ethically mined diamond clusters with secure butterfly backs.">
+          <div class="product-image-wrapper">
+            <img src="assets/images/jewelry-earrings.jpg" alt="Diamond Stud and Drop Earrings on Pedestal">
+            <div class="quick-view-overlay">
+              <button class="quick-view-btn" onclick="openQuickView(8)">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Earrings</h3>
+            <p class="product-specs">Studs, Huggies & Drops</p>
+            <div class="product-price">From $350</div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. Custom Design Section (Sage & Organic Pebble Collage)
+       ======================================================================== -->
+  <section class="custom-design-section" id="custom">
+    <div class="container">
+      <div class="custom-design-grid">
+        
+        <!-- Left Content -->
+        <div class="custom-design-content">
+          <span class="section-tag light">Bespoke Jewelry Service</span>
+          <h2 class="section-title">Custom Design</h2>
+          <p>
+            Collaborate one-on-one with our master designers to craft an heirloom piece as personal as your love story. Whether you are redesigning inherited family diamonds or creating an original ring from scratch, we bring your vision to life.
+          </p>
+          <div class="custom-actions">
+            <button class="btn btn-white" id="customProcessBtn">Learn More</button>
+            <button class="btn btn-outline-white" id="customBookBtn">Book Appointment</button>
+          </div>
+        </div>
+
+        <!-- Right Organic Pebble Collage -->
+        <div class="pebble-collage">
+          <div class="pebble-item pebble-1" title="Hand adorned with custom heirloom jewelry">
+            <img src="assets/images/custom-hand.jpg" alt="Client hand wearing bespoke custom stack rings and botanical leaf">
+          </div>
+          <div class="pebble-item pebble-2" title="Custom gold ring in jeweler ceramic dish">
+            <img src="assets/images/custom-dish.jpg" alt="Artisan custom ring and loose colored gemstones in ceramic dish">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       10. Infinite Value Ticker Ribbon
+       ======================================================================== -->
+  <div class="values-ticker">
+    <div class="ticker-track">
+      <div class="ticker-item"><span>✦</span> 100% Recycled Precious Metals</div>
+      <div class="ticker-item"><span>✦</span> Fairmined Certified Gold</div>
+      <div class="ticker-item"><span>✦</span> Ethical Traceable Gemstones</div>
+      <div class="ticker-item"><span>✦</span> Handcrafted In Philadelphia & NYC</div>
+      <div class="ticker-item"><span>✦</span> Certified B-Corporation</div>
+      <div class="ticker-item"><span>✦</span> Lifetime Warranty & Complimentary Sizing</div>
+      <!-- Repeat for seamless loop -->
+      <div class="ticker-item"><span>✦</span> 100% Recycled Precious Metals</div>
+      <div class="ticker-item"><span>✦</span> Fairmined Certified Gold</div>
+      <div class="ticker-item"><span>✦</span> Ethical Traceable Gemstones</div>
+      <div class="ticker-item"><span>✦</span> Handcrafted In Philadelphia & NYC</div>
+      <div class="ticker-item"><span>✦</span> Certified B-Corporation</div>
+      <div class="ticker-item"><span>✦</span> Lifetime Warranty & Complimentary Sizing</div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       11. Love In All Ways Section (Couple + Sky Blue)
+       ======================================================================== -->
+  <section class="love-section" id="love">
+    
+    <!-- Left Couple Portrait -->
+    <div class="love-media">
+      <img src="assets/images/love-couple.jpg" alt="Happy loving diverse couple embracing and smiling with Bario Neal wedding bands">
+    </div>
+
+    <!-- Right Sky Blue Panel -->
+    <div class="love-content">
+      <span class="section-tag">Community & Celebration</span>
+      <h2 class="section-title">Love In All Ways</h2>
+      <p class="love-description">
+        We believe love has endless expressions. From gender-neutral wedding bands to bespoke partner suites, our jewelry honors genuine love stories across the world. Discover how our community celebrates their vows.
+      </p>
+      <div>
+        <button class="btn btn-white" id="readStoriesBtn">Read Love Stories</button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ========================================================================
+       12. Community & Instagram Gallery
+       ======================================================================== -->
+  <section class="gallery-section">
+    <div class="container">
+      
+      <div class="section-header" style="margin-bottom: 2.5rem;">
+        <span class="section-tag">#LoveInAllWays • @barioneal</span>
+        <h2 class="section-title" style="font-size: 2.2rem;">From Our Community</h2>
+        <p style="color: var(--color-muted); font-size: 0.9rem;">
+          Real couples, bespoke heirloom commissions, and daily fine jewelry stacks shared by our community.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-card" onclick="openStory('Alex & Jordan', 'Avens diamond cluster paired with custom recycled gold band.')">
+          <img src="assets/images/gallery-1.jpg" alt="Sapphire and diamond cluster ring on bride hand">
+          <div class="gallery-overlay">
+            <i class="fa-brands fa-instagram"></i>
+            <span>View Story</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" onclick="openStory('Maya & Elena', 'Custom sapphire and pink tourmaline band stack.')">
+          <img src="assets/images/gallery-2.jpg" alt="Stack of multicolored gemstone wedding bands">
+          <div class="gallery-overlay">
+            <i class="fa-brands fa-instagram"></i>
+            <span>View Story</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" onclick="openStory('Ethical Sourcing', 'Traceable Montana sapphires before bespoke setting.')">
+          <img src="assets/images/gallery-3.jpg" alt="Loose unheated Montana sapphires on studio workbench">
+          <div class="gallery-overlay">
+            <i class="fa-brands fa-instagram"></i>
+            <span>View Story</span>
+          </div>
+        </div>
+
+        <div class="gallery-card" onclick="openStory('David & Marcus', 'Brushed platinum bands with emerald gemstone accent.')">
+          <img src="assets/images/gallery-4.jpg" alt="Bario Neal emerald solitaire ring on vintage lace">
+          <div class="gallery-overlay">
+            <i class="fa-brands fa-instagram"></i>
+            <span>View Story</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       13. Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <!-- Newsletter Signup -->
+      <div class="footer-newsletter-wrap">
+        <h2 class="footer-tagline">
+          We Find Always<br>
+          In All Ways.
+        </h2>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" class="newsletter-input" id="newsletterEmail" placeholder="Enter your email for private collection previews..." required>
+          <button type="submit" class="newsletter-submit">
+            <span>Sign Up</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- Footer Navigation 5 Columns -->
+      <div class="footer-nav-grid">
+        
+        <div class="footer-col">
+          <h4 class="footer-col-title">Shop</h4>
+          <ul class="footer-links">
+            <li><a href="#wedding">All Jewelry</a></li>
+            <li><a href="#wedding">Engagement Rings</a></li>
+            <li><a href="#wedding">Wedding Bands</a></li>
+            <li><a href="#everyday">Fine Necklaces</a></li>
+            <li><a href="#everyday">Earrings & Studs</a></li>
+            <li><a href="#everyday">Gift Cards</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">About</h4>
+          <ul class="footer-links">
+            <li><a href="#ethical">Our Story</a></li>
+            <li><a href="#ethical">Ethical Sourcing</a></li>
+            <li><a href="#ethical">Fairmined Gold</a></li>
+            <li><a href="#ethical">B-Corp Certification</a></li>
+            <li><a href="#ethical">Press & Features</a></li>
+            <li><a href="#ethical">Sustainability Report</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#custom">Custom Design</a></li>
+            <li><a href="#" onclick="openSizeGuide(); return false;">Ring Size Guide</a></li>
+            <li><a href="#" onclick="openCareGuide(); return false;">Care & Cleaning</a></li>
+            <li><a href="#" onclick="openResizingModal(); return false;">Repairs & Resizing</a></li>
+            <li><a href="#" onclick="openWarrantyModal(); return false;">Lifetime Warranty</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Visit</h4>
+          <ul class="footer-links">
+            <li><a href="#" onclick="openAppointmentModal('Philadelphia'); return false;">Philadelphia Flagship</a></li>
+            <li><a href="#" onclick="openAppointmentModal('New York'); return false;">New York Showroom</a></li>
+            <li><a href="#" onclick="openAppointmentModal('Virtual'); return false;">Virtual Consultations</a></li>
+            <li><a href="#" onclick="openAppointmentModal('Showroom'); return false;">Showroom Hours</a></li>
+            <li><a href="#" onclick="openAppointmentModal('Event'); return false;">Events & Trunk Shows</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Connect</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:support@barioneal.com">support@barioneal.com</a></li>
+            <li><a href="tel:2154542164">+1 (215) 454-2164</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram: @barioneal</a></li>
+            <li><a href="https://pinterest.com" target="_blank">Pinterest</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>© 2026 Bario Neal Jewelry Inc. All rights reserved. Handcrafted sustainably in Philadelphia, PA.</p>
+        <div class="footer-socials">
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://pinterest.com" target="_blank" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       14. Interactive Quick View & Product Customizer Modal
+       ======================================================================== -->
+  <div class="modal-backdrop" id="quickViewBackdrop">
+    <div class="modal-window">
+      <button class="modal-close" onclick="closeQuickView()" aria-label="Close modal">&times;</button>
+      <div class="quick-view-grid">
+        <div class="quick-view-img">
+          <img id="modalProductImg" src="assets/images/ring-avens.jpg" alt="Selected Product Preview">
+        </div>
+        <div class="quick-view-details">
+          <span class="section-tag" id="modalProductTag">Fairmined Gold</span>
+          <h2 class="modal-product-title" id="modalProductTitle">Avens Diamond Cluster Ring</h2>
+          <div class="modal-product-price" id="modalProductPrice">$2,840</div>
+          <p id="modalProductDesc" style="color: var(--color-muted); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6;">
+            A radiant burst of conflict-free brilliant white diamonds set organically on an ethical 14k gold band.
+          </p>
+
+          <!-- Metal Choice -->
+          <div class="modal-selector-group">
+            <span class="selector-label">Select Metal</span>
+            <div class="metal-options">
+              <button class="metal-btn active" onclick="selectMetal(this, '14k Yellow Gold', 0)">14k Yellow Gold</button>
+              <button class="metal-btn" onclick="selectMetal(this, '14k Rose Gold', 0)">14k Rose Gold</button>
+              <button class="metal-btn" onclick="selectMetal(this, '14k White Gold', 40)">14k White Gold</button>
+              <button class="metal-btn" onclick="selectMetal(this, 'Platinum', 350)">Platinum (+ $350)</button>
+            </div>
+          </div>
+
+          <!-- Ring Size -->
+          <div class="modal-selector-group">
+            <span class="selector-label">Select Ring Size (Complimentary Resizing)</span>
+            <select class="size-select" id="ringSizeSelect">
+              <option value="5">Size 5 (US)</option>
+              <option value="5.5">Size 5.5 (US)</option>
+              <option value="6">Size 6 (US)</option>
+              <option value="6.5" selected>Size 6.5 (Standard US)</option>
+              <option value="7">Size 7 (US)</option>
+              <option value="7.5">Size 7.5 (US)</option>
+              <option value="8">Size 8 (US)</option>
+              <option value="8.5">Size 8.5 (US)</option>
+              <option value="Custom">Custom / Send Ring Sizer</option>
+            </select>
+          </div>
+
+          <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+            <button class="btn btn-primary" style="flex: 1;" onclick="addCurrentModalToCart()">
+              <i class="fa-solid fa-bag-shopping"></i> Add to Bag
+            </button>
+            <button class="btn btn-outline" onclick="openAppointmentModal('Custom Inquiry'); closeQuickView();">
+              Custom Inquiry
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       15. Shopping Bag Slide-Over Drawer
+       ======================================================================== -->
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Bag">
+    <div class="cart-drawer-header">
+      <h3>Your Shopping Bag</h3>
+      <button class="modal-close" onclick="closeCart()" style="position: static;" aria-label="Close bag">&times;</button>
+    </div>
+
+    <div class="shipping-progress-bar">
+      <div id="shippingText">You have unlocked <strong>Free US Insured Shipping</strong>!</div>
+      <div class="progress-track">
+        <div class="progress-fill" id="shippingProgressFill" style="width: 100%;"></div>
+      </div>
+    </div>
+
+    <div class="cart-items-list" id="cartItemsList">
+      <!-- Items dynamically populated by JS -->
+    </div>
+
+    <div class="cart-drawer-footer">
+      <div class="cart-subtotal">
+        <span>Estimated Subtotal</span>
+        <span id="cartSubtotalAmount">$0</span>
+      </div>
+      <p style="font-size: 0.75rem; color: var(--color-muted); margin-bottom: 1rem; text-align: center;">
+        Taxes calculated at checkout. Ethical packaging & insured delivery included.
+      </p>
+      <button class="btn btn-primary cart-checkout-btn" onclick="simulateCheckout()">
+        Proceed to Secure Checkout
+      </button>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       16. Appointment Booking & Custom Consultation Modal
+       ======================================================================== -->
+  <div class="modal-backdrop" id="appointmentModal">
+    <div class="modal-window" style="max-width: 620px;">
+      <button class="modal-close" onclick="closeAppointmentModal()" aria-label="Close appointment modal">&times;</button>
+      <div class="section-header" style="margin-bottom: 2rem;">
+        <span class="section-tag">One-on-One Service</span>
+        <h2 class="section-title" style="font-size: 2.2rem;">Book a Consultation</h2>
+        <p style="color: var(--color-muted); font-size: 0.9rem;">
+          Meet with a non-commissioned jewelry specialist in Philadelphia, New York, or virtually from anywhere in the world.
+        </p>
+      </div>
+
+      <form id="appointmentForm" onsubmit="handleAppointmentSubmit(event)">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <label class="selector-label">Full Name</label>
+            <input type="text" required placeholder="Sarah Jenkins" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
+          </div>
+          <div>
+            <label class="selector-label">Email Address</label>
+            <input type="email" required placeholder="sarah@example.com" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
+          </div>
+        </div>
+
+        <div style="margin-bottom: 1rem;">
+          <label class="selector-label">Consultation Location</label>
+          <select id="apptLocation" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
+            <option value="Philadelphia">Philadelphia Flagship Studio (706 S 4th St)</option>
+            <option value="New York">New York Showroom (140 Franklin St, Brooklyn)</option>
+            <option value="Virtual" selected>Virtual Consultation (Zoom / Video Call)</option>
+          </select>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+          <div>
+            <label class="selector-label">Preferred Date</label>
+            <input type="date" required id="apptDate" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
+          </div>
+          <div>
+            <label class="selector-label">Preferred Time (EST)</label>
+            <select style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
+              <option>11:00 AM EST</option>
+              <option>1:00 PM EST</option>
+              <option>3:00 PM EST</option>
+              <option>5:00 PM EST</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Appointment Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       17. Love Story & Information Modal
+       ======================================================================== -->
+  <div class="modal-backdrop" id="storyModal">
+    <div class="modal-window" style="max-width: 600px; text-align: center;">
+      <button class="modal-close" onclick="closeStoryModal()" aria-label="Close story modal">&times;</button>
+      <span class="section-tag" style="margin-bottom: 0.5rem;">Love Story Spotlight</span>
+      <h2 class="section-title" id="storyModalTitle" style="font-size: 2.2rem; margin-bottom: 1rem;">Community Story</h2>
+      <p id="storyModalContent" style="color: var(--color-dark); font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem;">
+        Description text here...
+      </p>
+      <button class="btn btn-outline" onclick="closeStoryModal()">Back to Gallery</button>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Javascript Logic -->
+  <script src="js/main.js"></script>
+</body>
+</html>
